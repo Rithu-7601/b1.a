@@ -1,0 +1,241 @@
+<!-- typography,colors, responsive-images, tables-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container bg-secondary p-3">
+      <!-- bg color in bootstrap -->
+      <!-- the above line p-3 => padding which takes 30px(top,left,right,bottom) -->
+      <h1>Typography</h1>
+      <p>lets learn bootstrap</p>
+    </div>
+
+    <div class="container px-5">
+      <!--if need padding left & right(x-axis) only -->
+
+      <h1 class="display-3">
+        <!-- bootstrap font size increasing -->
+        welcome folks
+        <small class="text-muted">(The legend)</small>
+      </h1>
+      <p class="lead">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book.
+      </p>
+
+      <p class="text-danger">Error: this is a error</p>
+
+      <button class="bg-warning text-success">okay</button>
+      <!-- colors & bg-colors in bootstrap -->
+
+      <h2>bootstrap</h2>
+      <p class="h2">this is para</p>
+      <!-- you can use heading tags as classes in p tags -->
+      <hr />
+      <ul class="list-inline text-center text-success">
+        <li class="list-inline-item">Home</li>
+        <li class="list-inline-item">About</li>
+        <li class="list-inline-item">Contact</li>
+      </ul>
+      <!-- to have all the three in the same line use above classes -->
+
+      <hr />
+      <!-- tables in bootstrap -->
+      <table
+        class="
+          table table-dark table-striped table-bordered table-hover
+          text-center
+        "
+      >
+        <thead class="table-light">
+          <!--above line: can also use class (table-light,table-dark)or bg-success all those stuff-->
+          <!-- to make it bold insted of <td >use <th >cells downlines -->
+          <th>Name</th>
+          <th>Class</th>
+          <th>Section</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>archana</td>
+            <td>Python</td>
+            <td>beginner</td>
+          </tr>
+          <tr>
+            <td>bemisha</td>
+            <td>C</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>swathi</td>
+            <td>Java</td>
+            <td>beginner</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <div class="table-responsive">
+        <table
+          class="
+            table table-dark table-striped table-bordered table-hover
+            text-center
+          "
+        >
+          <thead class="table-light">
+            <!--above line: can also use class (table-light,table-dark)or bg-success all those stuff-->
+            <!-- to make it bold insted of <td >use <th >cells downlines -->
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+            <th>Section</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>archana</td>
+              <td>Python</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+            </tr>
+            <tr>
+              <td>bemisha</td>
+              <td>C</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>swathi</td>
+              <td>Java</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+              <td>beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+      <img
+        src="https://miro.medium.com/max/1838/0*DORfVSb5PrhdBet7."
+        alt="responsive-image"
+        class="img-fluid img-thumbnail"
+      />
+      <!--img-fluid to make img responsive in bootstrap-->
+      <hr />
+
+      <h3>Aligning images</h3>
+      <div>
+        <!-- - to bring the images to center class;(text-center)-->
+        <img
+          src="https://cdn.pixabay.com/photo/2016/03/31/23/41/classroom-1297779_960_720.png"
+          alt="studying"
+          width="250"
+          class="img-thumbnail"
+        />
+        <img
+          src="https://www.dorsetcreative.co.uk/wp-content/uploads/2020/04/VLE-vector.png"
+          alt="WFH"
+          width="250"
+          class="img-thumbnail float-right"
+        />
+      </div>
+
+      <!-- if u have one img only to center class:(mx-auto d-block)  -->
+      <!-- <img
+        src="https://www.dorsetcreative.co.uk/wp-content/uploads/2020/04/VLE-vector.png"
+        alt="WFH"
+        width="210"
+        class="mx-auto d-block"
+      /> -->
+      <hr />
+      <ul class="list-unstyled">
+        <!-- to remove bullets use list-unstyled -->
+        <li>My list 1</li>
+        <li>My list 2</li>
+        <li>My list 3</li>
+        <ul>
+          <li>sub list 1</li>
+          <li>sub list 2</li>
+          <li>sub list 3</li>
+        </ul>
+        <li>My list 4</li>
+        <li>My list 5</li>
+        <li>My list 6</li>
+      </ul>
+
+      <hr />
+
+      <blockquote class="blockquote text-center">
+        <p class="text-primary bg-secondary">
+          <!-- text colors & bg colors in bootstrap -->
+          A dream is not that which you see while sleeping, it is something that
+          does not let you sleep.
+        </p>
+        <footer class="blockquote-footer text-success">
+          Dr APJ Abdul Kalam
+        </footer>
+      </blockquote>
+
+      <hr />
+      <p><abbr title="attribute">attr</abbr></p>
+      <p>
+        <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+      </p>
+    </div>
+
+    <!-- bootstrap JS -->
+    <script src="assets/bootstrap-5.0.1-dist/js/jquery.min.js"></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
